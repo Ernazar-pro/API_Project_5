@@ -1,0 +1,703 @@
+{
+	"info": {
+		"_postman_id": "75ca0409-694a-41c7-a2a4-6a7732b0834c",
+		"name": "API_Project_5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29962217"
+	},
+	"item": [
+		{
+			"name": "Teacher",
+			"item": [
+				{
+					"name": "Get list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/teacher/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"teacher",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fullname",
+									"value": "Aybek",
+									"type": "text"
+								},
+								{
+									"key": "about",
+									"value": "Normal",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "+99986626265",
+									"type": "text"
+								},
+								{
+									"key": "study_center",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/teacher/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"teacher",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get detail",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/teacher/1/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"teacher",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fullname",
+									"value": "Mirazim",
+									"type": "text"
+								},
+								{
+									"key": "about",
+									"value": "jfkdkdkss",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "85566332256",
+									"type": "text"
+								},
+								{
+									"key": "study_center",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/teacher/7/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"teacher",
+								"7",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/teacher/7/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"teacher",
+								"7",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Get list",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/student/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"student",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fullname",
+									"value": "Bahadir",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "55444545642",
+									"type": "text"
+								},
+								{
+									"key": "study_center",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "teacher",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/student/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"student",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get detail",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/student/3/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"student",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fullname",
+									"value": "Timur",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "4552556622556",
+									"type": "text"
+								},
+								{
+									"key": "study_center",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "teacher",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/student/3/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"student",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/student/3/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"student",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Study Center",
+			"item": [
+				{
+					"name": "Get list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/study_center",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"study_center"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Get study",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/study_center/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"study_center",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/study_center/3",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"study_center",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Camelot",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/study_center/3/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"study_center",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/study_center/3/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"study_center",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
